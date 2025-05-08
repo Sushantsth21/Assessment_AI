@@ -1,0 +1,24 @@
+### How to Protect Yourself and Others
+CDC recommends core prevention strategies such as staying up to date with COVID-19 vaccines, practicing good hygiene, taking steps for cleaner air, staying home when sick, and seeking prompt healthcare. Additional strategies include masking, distancing, and testing during high transmission periods or if at risk.
+
+### COVID-19 Testing
+COVID-19 testing identifies current infection with SARS-CoV-2. NAATs (e.g., PCR) are the gold standard, while antigen tests provide faster results but may be less sensitive. FDA recommends repeat antigen testing to confirm negative results. Self-tests are available and should be used according to package instructions.
+
+### When to Use COVID-19 Tests
+Use NAAT or antigen tests depending on recent infection and symptoms. For individuals recently recovered from COVID-19, testing guidance varies based on days since positive result and symptom presence. Consult healthcare providers as needed.
+
+### Accessing COVID-19 Tests
+Tests can be obtained at home or at testing sites. Self-tests are available in stores or online. NAATs and antigen tests are provided at pharmacies, clinics, or public health departments. Disability access lines can assist in locating test sites.
+
+### Understanding COVID-19 Test Results
+A positive result means current or recent infection. A negative result may require retesting depending on symptoms and test type. Consult a provider for interpreting results and deciding next steps, especially if symptoms are present.
+
+### COVID-19 Treatment Overview
+People at high risk of severe illness can receive antiviral treatment (e.g., Paxlovid, Remdesivir, Molnupiravir) within 5–7 days of symptom onset. Early treatment reduces illness duration, hospitalization, and death. Treatment must be prescribed and may interact with other medications.
+
+### Preventing COVID-19
+Vaccination remains the first step to prevent severe outcomes. Staying up to date with COVID-19 vaccines protects against severe illness. For immunocompromised individuals, Pemivibart (Pemgarda) may offer pre-exposure protection. It is administered as an IV infusion.
+
+### Recovery and Rebound
+Most people with COVID-19 recover at home using over-the-counter medication. Rebound can occur 3–7 days after recovery or testing negative. Symptoms are usually mild and resolve quickly. Treatment benefits outweigh rebound risk for high-risk individuals.
+

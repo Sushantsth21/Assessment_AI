@@ -1,0 +1,24 @@
+### Preventing Cancer - Overview
+You can lower your risk of getting many common kinds of cancer by making healthy choices. Screening tests can find some cancers early, when treatment works best. Vaccines can help prevent several kinds of cancer.
+
+### Cancer Screening Tests
+Screening tests can find several types of cancer early, which increases the chances of successful treatment.
+
+### Vaccines (Shots)
+The HPV vaccine and the hepatitis B vaccine can help prevent certain types of cancer.
+
+### Healthy Choices
+Making healthy lifestyle choices—like eating fresh vegetables, avoiding tobacco, exercising, and maintaining a healthy weight—can reduce your risk of getting cancer.
+
+### Cancer Data and Statistics - Overview
+The United States Cancer Statistics (USCS) are the official federal cancer statistics. They combine data from CDC’s National Program of Cancer Registries and the National Cancer Institute’s SEER program. These data help understand cancer rates and trends, support research, eliminate disparities, and improve outcomes.
+
+### Cancer Facts
+In 2021, there were 1,777,566 new cancer cases reported in the U.S. In 2022, 608,366 people died from cancer. These are the most recent years for which data are available.
+
+### U.S. Cancer Statistics Tools
+The Data Visualizations tool allows users to explore U.S. cancer data, including rates by state, demographics, and trends. Other tools include CDC WONDER, State Cancer Profiles, Chronic Disease Indicators, PLACES, Disability and Health Data System, and Small Area Health Insurance Estimates.
+
+### Databases for Researchers
+Researchers can access the U.S. Cancer Statistics Public Use Database via SEER*Stat or request the Restricted Access Database, which includes detailed variables like site-specific factors and county-level data.
+
