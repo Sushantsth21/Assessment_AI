@@ -1,5 +1,6 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from treatment_planner import TreatmentPlanRequest, TreatmentPlan, generate_treatment_plan
 
 app = FastAPI()
 
@@ -15,7 +16,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 @app.get("/")
 def read_root():
-    return {"message": "Hello from FastAPI"}
+    return {"message": "Hello from Treatment Planner API"}
+
+@app.post("/treatment-plan", response_model=TreatmentPlan)
+async def create_treatment_plan(request: TreatmentPlanRequest):
+    """Generate a treatment plan based on patient information"""
+    try:
+        return generate_treatment_plan(request)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

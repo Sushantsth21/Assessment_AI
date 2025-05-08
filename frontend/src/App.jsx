@@ -1,14 +1,10 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-axios.get('http://localhost:8000/')
-  .then(response => {
-    console.log(response.data);
-  })
-  .catch(error => {
-    console.error('There was an error!', error);
-  });
-
+// Configure axios base URL
+const api = axios.create({
+  baseURL: 'http://localhost:8000',
+});
 
 export default function TreatmentPlanner() {
   const [symptoms, setSymptoms] = useState([]);
@@ -21,6 +17,8 @@ export default function TreatmentPlanner() {
   const [currentAllergy, setCurrentAllergy] = useState('');
   const [location, setLocation] = useState('');
   const [treatmentPlan, setTreatmentPlan] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const addSymptom = () => {
     if (currentSymptom.trim()) {
@@ -50,25 +48,31 @@ export default function TreatmentPlanner() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Connect to backend API
-    // Mock response for UI demonstration
-    setTreatmentPlan({
-      medicalActions: [
-        'Consult general practitioner',
-        'Perform blood test',
-        'Schedule orthopedic consultation'
-      ],
-      locationConsiderations: [
-        'Nearest hospital: City General (2 miles away)',
-        'Available telehealth options: HealthConnect MD'
-      ],
-      justifications: [
-        'Orthopedic consultation recommended due to mobility issues',
-        'Blood test required to rule out infection'
-      ]
-    });
+    setLoading(true);
+    setError(null);
+    
+    try {
+      // Prepare the request payload
+      const requestData = {
+        symptoms,
+        physicalCondition,
+        location
+      };
+      
+      // Call the backend API
+      const response = await api.post('/treatment-plan', requestData);
+      setTreatmentPlan(response.data);
+    } catch (err) {
+      console.error('Error generating treatment plan:', err);
+      setError(
+        err.response?.data?.detail || 
+        'Failed to generate treatment plan. Please try again.'
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -177,10 +181,21 @@ export default function TreatmentPlanner() {
 
           <button
             type="submit"
-            className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600"
+            disabled={loading}
+            className={`w-full py-2 px-4 rounded-lg ${
+              loading 
+                ? 'bg-gray-400 cursor-not-allowed' 
+                : 'bg-green-500 hover:bg-green-600'
+            } text-white`}
           >
-            Generate Treatment Plan
+            {loading ? 'Generating...' : 'Generate Treatment Plan'}
           </button>
+          
+          {error && (
+            <div className="mt-4 p-3 bg-red-100 text-red-700 rounded-lg">
+              {error}
+            </div>
+          )}
         </form>
 
         {treatmentPlan && (
