@@ -1,6 +1,6 @@
 # Medical Treatment Planner
 
-## 🏥 Project Overview
+## Project Overview
 
 The Medical Treatment Planner is a full-stack application that:
 
@@ -20,7 +20,7 @@ The Medical Treatment Planner is a full-stack application that:
 - **External Services**: Google Maps API for location-based healthcare facility recommendations
 - **Evaluation Framework**: Customized metrics for assessing treatment plan quality
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React, TailwindCSS
 - **Backend**: Python, FastAPI
@@ -30,7 +30,7 @@ The Medical Treatment Planner is a full-stack application that:
 - **Evaluation**: NLTK for BLEU scoring, custom evaluation metrics
 - **APIs**: Google Maps API for location services
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.9+
 - Node.js 16+
@@ -38,7 +38,7 @@ The Medical Treatment Planner is a full-stack application that:
 - Pinecone API key
 - Google Maps API key
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 ### Backend Setup
 
@@ -96,7 +96,7 @@ The Medical Treatment Planner is a full-stack application that:
 
 4. Open your browser and go to `http://localhost:5173`
 
-## 💡 How It Works
+## How It Works
 
 1. **Data Collection**: The frontend form collects patient symptoms, physical condition details, and location.
 2. **Information Retrieval**: The system uses embeddings to find relevant medical information in the Pinecone database.
@@ -104,7 +104,7 @@ The Medical Treatment Planner is a full-stack application that:
 4. **Plan Generation**: All information is sent to GPT-4o, which generates a structured treatment plan.
 5. **Presentation**: The treatment plan is displayed to the user with medical actions, location considerations, and justifications.
 
-## 📊 Evaluation Framework
+##  Evaluation Framework
 
 The system includes a comprehensive evaluation framework to measure treatment plan quality:
 
@@ -124,7 +124,7 @@ The system includes a comprehensive evaluation framework to measure treatment pl
 2. **Rural Allergic Patient - Edge Case**: Tests telehealth recommendations and allergy awareness
 3. **Dangerous Allergy Combo - Failure Case**: Tests ability to avoid contraindicated treatments
 
-## 🧪 Running Evaluations
+## Running Evaluations
 
 ```bash
 python evaluation.py
@@ -135,7 +135,7 @@ This will run the evaluation framework against predefined test cases and output 
 
 ```
 
-## 🚨 Limitations and Ethical Considerations
+## Limitations and Ethical Considerations
 
 - This system is designed for **informational purposes only** and does not replace professional medical advice.
 - The treatment plans should be reviewed by healthcare professionals before implementation.
