@@ -1,0 +1,15 @@
+
+Pneumonia - CDC Information
+
+KEY POINTS
+- Pneumonia is a lung infection caused by bacteria, viruses, fungi, or parasites.
+- Types include community-acquired, healthcare-acquired, and ventilator-associated pneumonia.
+- Common symptoms: chest pain, cough, fever, fatigue, nausea, shortness of breath, altered mental status.
+- Risk increases with age, chronic illnesses (diabetes, lung disease, etc.), smoking, and exposure to infected individuals.
+- Bacterial causes: Mycoplasma pneumoniae, pneumococcal disease.
+- Viral causes: COVID-19, influenza, RSV, HPIV, HMPV, rhinovirus.
+- Fungal and parasitic causes are less common.
+- Prevention includes vaccines (Hib, pneumococcal, flu, RSV, COVID-19), good hygiene, and managing chronic conditions.
+- World Pneumonia Day: November 12.
+
+See CDC for more at: https://www.cdc.gov/pneumonia
